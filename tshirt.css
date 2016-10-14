@@ -1,3 +1,22 @@
-h1 {
-  color: blue;
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+
+section {
+  border: 2px solid blue;
+  height: 300px;
+  width: 300px;
+  float: left;
+}
+
+section img {
+  height: 230px;
+  width: 230px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+
+}
+
+.pink {
+  margin: 0 25px 0 25px;
 }
