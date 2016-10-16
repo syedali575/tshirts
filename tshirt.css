@@ -15,12 +15,14 @@ width: 80%;
 
 /* Article */
 
-
 article {
   display: inline-block;
   width: 30%;
+  height: 30%;
   margin-top: 20%;
 }
+
+/* Paragraph */
 
 p {
   color: #779ECB;
@@ -39,6 +41,8 @@ p {
 section {
   border: 2px solid #779ECB;
   padding: 20px;
+  position: relative;
+
 }
 
 section img {
@@ -48,62 +52,48 @@ section img {
   margin: 0 auto;
 }
 
-
-
- /* Nav */
-
-nav {
-
-  height: 40px;
-  border: 2px solid red;
-
+section ul {
+  margin: 0;
+  padding: 0;
 }
 
+section ul li{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  border-left: 2px solid #779ECB;
+  border-bottom: 2px solid #7793cb;
+  font-size: ;
+  color: #779ECB;
+}
+
+ /* Nav */
 
 nav ul  {
  list-style: none;
  padding: 0;
  margin: 0;
- border: 2px solid green;
- height: 40px;
-
 }
 
-section ul  {
- list-style: none;
- display: block;
- padding: 0;
- margin: 0;
- border: 2px solid green;
- height: 40px;
- width: 100%;
-}
-
-
-
-
-section ul li {
-  height: 100%;
+nav ul li {
   width: 18%;
-  height: 40px;
-   border: 2px solid blue;
   border-left: 2px solid #779ECB;
   border-bottom: 2px solid #779ECB;
-  float: left;
+float: left;
+}
+
+nav ul li::after {
+content: "";
+display: block;
+padding-bottom: 100%;
 
 }
 
-
-/*nav ul li {
-  height: 100%;
-  width: 18%;
-  height: 40px;
-   border: 2px solid blue;
-  border-left: 2px solid #779ECB;
-  border-bottom: 2px solid #779ECB;
-  float: left;
-}*/
-
+nav ul li {
+  padding-bottom: 0;
+}
 
 
 
