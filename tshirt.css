@@ -43,8 +43,9 @@ section img {
   margin: 0 auto;
 }
 
-section img:hover {
-  transform: rotateY(80deg);
+section img.front:hover {
+  transform: rotateY(-180deg);
+  transition: all .5s linear;
 }
 
 .back {
@@ -65,11 +66,12 @@ z-index: 1;
 
 /* This code is for rotate imgage arrow */
 section ul li{
-  margin: 0;
-  padding: 0;
+  padding: 6px;
+  /*margin: 0;
+  padding: 0;*/
   position: absolute;
-  top: 1px;
-  right: 1px;
+  top: 0px;
+  right: 0px;
   border-left: 2px solid #779ECB;
   border-bottom: 2px solid #7793cb;
   color: #779ECB;
@@ -97,22 +99,118 @@ nav ul li {
   float: left;
 }
 
-/*nav ul li::after {
-content: "";
-display: block;
-padding-bottom: 100%;
-clear: both;
+.colors {
+  text-decoration: none;
+  color: #779ecb;
+  display: block;
+}
 
-}*/
+nav ul li:hover >ul  {
+  background-color: white;
+  color: #779ecb;
+  border: 0 solid white;
+  display: block;
+}
+
+
+nav ul li:hover >table  {
+  display: block;
+}
+
+
+
+
+li.fa.fa-eye.small {
+  font-size: 10px;
+}
+
+li.fa.fa-eye.medium {
+  font-size: 12px;
+}
+
+li.fa.fa-eye.large {
+  font-size: 14px;
+}
+
+li.fa.fa-eye.xtra {
+  font-size: 16px;
+}
+
+.pink {
+    color: #da99b9;
+}
+
+.blue {
+  color: #779ECB;
+}
+
+.green {
+  color: green;
+}
+
+.yellow {
+  color: #ffc200;
+}
+
+.dropdown {
+  margin-top: 6px;
+  position: absolute;
+  display: none;
+}
+
+table {
+  margin-top: 6px;
+  position: absolute;
+  display: none;
+}
+
+
+
 
 nav ul li {
 color: #779ecb;
 text-align: center;
+position: relative;
 
 }
 
 .z {
   border-right: 2px solid #779ECB;
+}
+
+.arrows:hover {
+  background-color: #779ecb;
+  color: white;
+}
+
+.heart:hover {
+  background-color: #779ecb;
+  color: white;
+}
+
+.cart:hover {
+  background-color: #779ecb;
+  color: white;
+}
+
+.square {
+  color: #ffc200;
+}
+
+.pink-square {
+  color: #da99b9;
+}
+
+.square:hover {
+background-color: #779ecb;
+}
+
+.pink-square:hover {
+background-color: #779ecb;
+}
+
+.blue:hover {
+background-color: #779ecb;
 }
 
 
