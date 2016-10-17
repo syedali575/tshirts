@@ -31,6 +31,8 @@ section {
   border: 2px solid #779ECB;
   padding: 20px;
   position: relative;
+  width: 300px;
+  box-sizing: border-box;
 
 }
 
@@ -38,26 +40,39 @@ section {
 
 
 section img {
-  width: 128px;
+  width: 120px;
   display: block;
   margin: 0 auto;
 }
 
-section img.front:hover {
-  transform: rotateY(-180deg);
+i:hover ~ img {
+  background: #779ECB;
+  color: #ffffff;
+  transform: rotateY(-90deg);
   transition: all .5s linear;
+
 }
+
+
+
+/*.front:hover {
+  transform: rotateY(-90deg);
+  transition: all .5s linear;
+}*/
+
+
 
 .back {
   position: relative;
   width: 120px;
+  margin: 0 auto;
 }
 
 
 .front {
 position: absolute;
-top: 20px;
-left: 84px;
+top: 38px;
+left: 88px;
 z-index: 1;
 
 }
@@ -110,15 +125,8 @@ nav ul li:hover >ul  {
   color: #779ecb;
   border: 0 solid white;
   display: block;
+  opacity: 1;
 }
-
-
-nav ul li:hover >table  {
-  display: block;
-}
-
-
-
 
 li.fa.fa-eye.small {
   font-size: 10px;
@@ -145,7 +153,7 @@ li.fa.fa-eye.xtra {
 }
 
 .green {
-  color: green;
+  color: #33ff6b;
 }
 
 .yellow {
@@ -155,16 +163,36 @@ li.fa.fa-eye.xtra {
 .dropdown {
   margin-top: 6px;
   position: absolute;
+  bottom: 45px;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1;
   display: none;
+
 }
+
+.dropdown {
+  border: 2px solid #779ECB;
+}
+
+
+nav ul li:hover >table  {
+  display: block;
+}
+
 
 table {
   margin-top: 6px;
   position: absolute;
+  bottom: 45px;
+  left: 10px;
   display: none;
 }
 
-
+table {
+  border: 2px solid #779ECB;
+  background-color: #ffffff;
+}
 
 
 nav ul li {
@@ -224,4 +252,37 @@ p {
 
 .c {
   margin-left: 150px;
+}
+
+
+/*@media print style
+
+/*mobile phone style*/
+@media screen and (min-width: 420px) {
+
+  article {
+    float: left;
+  }
+
+}
+
+
+/*tablet style*/
+
+@media screen and (min-width: 600px) and (max-width: 799px){
+
+  article {
+    width: 300px;
+
+  }
+
+}
+
+
+/*desktop style*/
+
+@media screen and (min-width: 800px) {
+  article {
+    width: 300px;
+  }
 }
