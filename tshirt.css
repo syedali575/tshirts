@@ -45,7 +45,7 @@ section img {
   margin: 0 auto;
 }
 
-i:hover ~ img {
+i:hover ~ img{
   background: #779ECB;
   color: #ffffff;
   transform: rotateY(-90deg);
@@ -71,7 +71,7 @@ i:hover ~ img {
 
 .front {
 position: absolute;
-top: 38px;
+top: 20px;
 left: 88px;
 z-index: 1;
 
@@ -80,7 +80,7 @@ z-index: 1;
 
 
 /* This code is for rotate imgage arrow */
-section ul li{
+section i{
   padding: 6px;
   /*margin: 0;
   padding: 0;*/
@@ -114,6 +114,11 @@ nav ul li {
   float: left;
 }
 
+nav ul ul li {
+  border: 2px solid #779ECB;
+  height: 3px;
+}
+
 .colors {
   text-decoration: none;
   color: #779ecb;
@@ -125,8 +130,10 @@ nav ul li:hover >ul  {
   color: #779ecb;
   border: 0 solid white;
   display: block;
-  opacity: 1;
+  opacity: .3;
 }
+
+/*nav size list*/
 
 li.fa.fa-eye.small {
   font-size: 10px;
@@ -144,6 +151,8 @@ li.fa.fa-eye.xtra {
   font-size: 16px;
 }
 
+/*tshirt color table choices */
+
 .pink {
     color: #da99b9;
 }
@@ -159,6 +168,8 @@ li.fa.fa-eye.xtra {
 .yellow {
   color: #ffc200;
 }
+
+/*tshirt size list style*/
 
 .dropdown {
   margin-top: 6px;
