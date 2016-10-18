@@ -54,6 +54,10 @@ i:hover ~ img{
 }
 
 
+/*i:hover > img{
+  display: none;
+}*/
+
 
 /*.front:hover {
   transform: rotateY(-90deg);
